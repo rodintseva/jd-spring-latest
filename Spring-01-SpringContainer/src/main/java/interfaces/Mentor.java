@@ -1,6 +1,6 @@
 package interfaces;
 
 public interface Mentor {
-    void createMentor();
+    void createMentorAccount();
 
 }
