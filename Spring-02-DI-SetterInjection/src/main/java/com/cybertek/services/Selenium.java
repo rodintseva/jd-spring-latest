@@ -4,14 +4,20 @@ import com.cybertek.interfaces.Course;
 import com.cybertek.interfaces.ExtraSessions;
 
 public class Selenium implements Course {
-    ExtraSessions extraSessions;
-    public  Selenium(ExtraSessions extraSessions){
-        this.extraSessions=extraSessions;
 
+    private OfficeHours officeHours;
+
+    public OfficeHours getOfficeHours() {
+        return officeHours;
     }
+
+    public void setOfficeHours(OfficeHours officeHours) {
+        this.officeHours = officeHours;
+    }
+
     @Override
     public void getTeachingHours() {
-        System.out.println("Weekly teaching hours:" + (20+extraSessions.getHours()));
+        System.out.println("Weekly teaching hours:" + (20+officeHours.getHours()));
     }
 }
 
