@@ -7,20 +7,20 @@ import com.cybertek.interfaces.ExtraSessions;
 public class Java implements Course {
     public int x;
 
-    public OfficeHours getOfficeHours() {
-        return officeHours;
+  private ExtraSessions  extraSessions;
+
+    public ExtraSessions getExtraSessions() {
+        return extraSessions;
     }
 
-    public void setOfficeHours(OfficeHours officeHours) {
-        this.officeHours = officeHours;
+    public void setExtraSessions(ExtraSessions extraSessions) {
+        this.extraSessions = extraSessions;
     }
 
-    private  OfficeHours officeHours;
-
-      @Override
+    @Override
     public void getTeachingHours() {
 
-        System.out.println("Weekly teaching hours:" + (15 + officeHours.getHours()));
+        System.out.println("Weekly teaching hours:" + (15 + extraSessions.getHours()));
     }
 }
 

@@ -5,10 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="javaHours" class="com.cybertek.services.Java">
-<property name="extraSessions" ref="officeHours"/>
+
+    <constructor-arg ref="officeHours"> </constructor-arg>
     </bean>
     <bean id="seleniumHours" class="com.cybertek.services.Selenium">
-        <property name="extraSessions" ref="officeHours"/>
+
+        <constructor-arg ref ="officeHours"/>
+
     </bean>
     <bean id="officeHours" class="com.cybertek.services.OfficeHours"></bean>
 </beans>
