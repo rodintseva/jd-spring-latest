@@ -11,7 +11,8 @@ public class CybertekApp {
         BeanFactory container = new ClassPathXmlApplicationContext("config.xml");
         Course course = container.getBean("javaHours",Course.class);
         course.getTeachingHours();
-
+        Course course1 = container.getBean("seleniumHours",Course.class);
+        course1.getTeachingHours();
 
 
     }
