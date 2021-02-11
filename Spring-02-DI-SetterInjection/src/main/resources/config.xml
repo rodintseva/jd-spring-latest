@@ -4,11 +4,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="javaHours" class="com.cybertek.services.Java">
+    <bean id="javaHours" class="com.Java">
 <property name="extraSessions" ref="officeHours"/>
     </bean>
-    <bean id="seleniumHours" class="com.cybertek.services.Selenium">
+    <bean id="seleniumHours" class="com.Selenium">
         <property name="extraSessions" ref="officeHours"/>
     </bean>
-    <bean id="officeHours" class="com.cybertek.services.OfficeHours"></bean>
+    <bean id="officeHours" class="com.OfficeHours"></bean>
 </beans>

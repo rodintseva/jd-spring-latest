@@ -4,14 +4,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="javaHours" class="com.Java">
-
-    <constructor-arg ref="officeHours"> </constructor-arg>
-    </bean>
-    <bean id="seleniumHours" class="com.Selenium">
-
-        <constructor-arg ref ="officeHours"/>
+    <bean id="java" class="com.cybertek.services.Java" init-method="myInitMethod" destroy-method="myDestroyMethod">
 
     </bean>
-    <bean id="officeHours" class="com.OfficeHours"></bean>
+
 </beans>
